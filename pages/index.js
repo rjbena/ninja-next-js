@@ -6,7 +6,6 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <h1>Homepage</h1>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
@@ -14,7 +13,6 @@ export default function Home() {
         odit doloremque dolorum eum explicabo repellendus odio corrupti? Ullam
         officiis ratione ad accusamus.
       </p>
-      <Footer />
     </div>
   );
 }
