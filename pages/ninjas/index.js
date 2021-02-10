@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../../styles/Ninjas.module.css";
 
 const Ninjas = ({ ninjas }) => {
@@ -6,9 +7,11 @@ const Ninjas = ({ ninjas }) => {
       <h1>Ninjas</h1>
       {ninjas.map((ninja) => (
         <div key={ninja.id}>
-          <a className={styles.single} href="">
-            <h3>{ninja.name}</h3>
-          </a>
+          <Link href={`/ninjas/${ninja.id}`}>
+            <a className={styles.single} href="">
+              <h3>{ninja.name}</h3>
+            </a>
+          </Link>
         </div>
       ))}
     </div>
